@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conciliação Bancária Avançada - Plataforma de reconciliação financeira com IA, motor de regras e matching N:M para identificar correspondências.">
+    <title>Conciliação Bancária | Portfólio Vibe Coding + IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>Vibe<span
+                        class="text-gradient">Dev</span></span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projetos</a>
+                <a href="../index.html#method">Método</a>
+                <a href="../index.html#contact">Contato</a>
+            </div>
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content reveal">
+                    <nav class="breadcrumb">
+                        <a href="../index.html">Home</a><span>›</span>
+                        <a href="../index.html#projects">Projetos</a><span>›</span>
+                        <span>Conciliação Bancária</span>
+                    </nav>
+                    <div class="featured-badge" style="background: linear-gradient(135deg, #6366f1 0%, #ec4899 100%);">
+                        🏦 FinTech + IA</div>
+                    <h1>Conciliação <span class="text-gradient">Bancária</span></h1>
+                    <p>Plataforma de reconciliação financeira que compara extratos bancários com registros internos
+                        usando IA, regras determinísticas e matching inteligente N:M.</p>
+                    <div class="project-meta">
+                        <div class="meta-item"><span>📅</span><span>2025</span></div>
+                        <div class="meta-item"><span>🎯</span><span>FinTech</span></div>
+                        <div class="meta-item"><span>🏷️</span><span>React, Gemini, Recharts</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary-section">
+            <div class="container">
+                <div class="summary-grid">
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">🎯</div>
+                        <h3>O Problema</h3>
+                        <p>Conciliar extrato bancário com lançamentos do ERP é manual, demorado e propenso a erros.
+                            Transações podem ter descrições diferentes e múltiplos registros.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">💡</div>
+                        <h3>A Solução</h3>
+                        <p>Conciliação híbrida: saldo diário exato + IA que analisa descrições (fuzzy matching),
+                            proximidade de datas e soma de valores. Motor de regras IF/THEN configurável.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">📈</div>
+                        <h3>O Impacto</h3>
+                        <p>Matching N:M (1 depósito = 3 faturas). Score de confiança. Dashboard de KPIs. 8 tipos de
+                            relatórios. Gestão de exceções.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🤖</span> Inteligência Artificial</h2>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step card reveal">
+                        <div class="step-number">🔍</div>
+                        <div class="step-content">
+                            <h4>Análise Semântica</h4>
+                            <p>Gemini analisa descrições bancárias e busca correspondência nos registros internos usando
+                                fuzzy matching e NLP.</p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">📅</div>
+                        <div class="step-content">
+                            <h4>Janelas de Tolerância</h4>
+                            <p>Considera proximidade de datas (D+1, D+2) para encontrar pagamentos que foram lançados em
+                                dias diferentes.</p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">🧮</div>
+                        <div class="step-content">
+                            <h4>Matching N:M</h4>
+                            <p>Identifica que 1 depósito bancário pode corresponder à soma de 3 faturas internas - algo
+                                impossível com regras simples.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>⚙️</span> Motor de Regras</h2>
+                </div>
+                <div class="tech-challenges">
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Critérios</h4>
+                            <p>Descrição (contém, começa com), Valor (igual, maior que, tolerância), Data, Tipo</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Ações</h4>
+                            <p>Conciliar Automaticamente, Sinalizar para Revisão, Apenas Sugerir</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Exemplos</h4>
+                            <p>"Se descrição contiver 'Tarifa' → conciliar auto" | "Se Fornecedor X e valor > 1000 →
+                                revisar"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>📊</span> Relatórios</h2>
+                </div>
+                <div class="tech-challenges">
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Posição de Caixa</h4>
+                            <p>Saldo consolidado por conta</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Extrato Detalhado</h4>
+                            <p>Lista completa com status</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Divergências</h4>
+                            <p>Itens marcados como exceção</p>
+                        </div>
+                    </div>
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Histórico</h4>
+                            <p>Log: quando, como (Manual/IA/Regra)</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Aging</h4>
+                            <p>Antiguidade de pendências</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Performance</h4>
+                            <p>Eficiência da equipe e regras</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-stack-section reveal">
+                    <h3>Stack Tecnológica</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React 19</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Gemini API</span>
+                        <span class="tech-tag">Recharts</span>
+                        <span class="tech-tag">React Router v7</span>
+                        <span class="tech-tag">BrasilAPI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="metrics-grid">
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🤖</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">AI-First</div>
+                        <div class="metric-label">IA Principal</div>
+                        <div class="metric-context">Não apenas Valor + Data</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🔗</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">N:M</div>
+                        <div class="metric-label">Matching</div>
+                        <div class="metric-context">1 depósito = N faturas</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📋</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Regras</div>
+                        <div class="metric-label">Motor</div>
+                        <div class="metric-context">IF/THEN configurável</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📊</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">8</div>
+                        <div class="metric-label">Relatórios</div>
+                        <div class="metric-context">Visões analíticas</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="project-cta reveal">
+                    <p>Precisa automatizar a conciliação bancária da sua empresa?</p>
+                    <a href="../index.html#contact" class="btn btn-primary">Entre em Contato <span>→</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 VibeDev • Construído com <span class="text-gradient">Vibe Coding + IA</span></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

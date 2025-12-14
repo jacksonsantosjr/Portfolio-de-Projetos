@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="PDF Fusion - Combine múltiplos arquivos PDF em um único documento diretamente no navegador, sem enviar dados para servidores externos.">
+    <title>PDF Fusion | Portfólio Vibe Coding + IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>Vibe<span
+                        class="text-gradient">Dev</span></span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projetos</a>
+                <a href="../index.html#method">Método</a>
+                <a href="../index.html#contact">Contato</a>
+            </div>
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content reveal">
+                    <nav class="breadcrumb">
+                        <a href="../index.html">Home</a><span>›</span>
+                        <a href="../index.html#projects">Projetos</a><span>›</span>
+                        <span>PDF Fusion</span>
+                    </nav>
+                    <div class="featured-badge">📄 Produtividade</div>
+                    <h1>PDF <span class="text-gradient">Fusion</span></h1>
+                    <p>Combine múltiplos arquivos PDF em um único documento diretamente no navegador. 100% privado -
+                        seus arquivos nunca saem do seu computador.</p>
+                    <div class="project-meta">
+                        <div class="meta-item"><span>📅</span><span>2025</span></div>
+                        <div class="meta-item"><span>🎯</span><span>Produtividade</span></div>
+                        <div class="meta-item"><span>🏷️</span><span>React, TypeScript, pdf-lib</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary-section">
+            <div class="container">
+                <div class="summary-grid">
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">🎯</div>
+                        <h3>O Objetivo</h3>
+                        <p>Oferecer uma ferramenta rápida para unificação de documentos PDF com total privacidade, sem
+                            depender de serviços online que podem reter seus dados.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">💡</div>
+                        <h3>A Solução</h3>
+                        <p>SPA com drag-and-drop, reordenação visual, validação de arquivos e processamento 100%
+                            client-side usando a biblioteca pdf-lib.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">📈</div>
+                        <h3>O Impacto</h3>
+                        <p>Velocidade depende apenas do hardware do usuário. Sem limites de upload. Sem gargalos de
+                            rede. Privacidade total.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>⚙️</span> Funcionalidades</h2>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step card reveal">
+                        <div class="step-number">📁</div>
+                        <div class="step-content">
+                            <h4>Upload Flexível</h4>
+                            <p>Adicione via botão ou arraste e solte. Validação automática filtra arquivos não-PDF.
+                                Acumula novos arquivos sem perder anteriores.</p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">🔀</div>
+                        <div class="step-content">
+                            <h4>Reordenação Drag & Drop</h4>
+                            <p>Arraste arquivos na lista para definir a ordem exata das páginas no documento final.
+                                Remova itens individuais ou limpe tudo.</p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">⚡</div>
+                        <div class="step-content">
+                            <h4>Motor de Fusão</h4>
+                            <p>Usa <code>pdf-lib</code> para criar documento vazio, copiar páginas de cada arquivo e
+                                gerar Blob. Download automático com timestamp.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🛠️</span> Arquitetura</h2>
+                </div>
+                <div class="tech-stack-section reveal">
+                    <h3>Stack Tecnológica</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React 19</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Vite</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">pdf-lib</span>
+                        <span class="tech-tag">SVG Icons</span>
+                    </div>
+                </div>
+                <div class="metrics-grid" style="margin-top: var(--space-lg);">
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🔒</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">100%</div>
+                        <div class="metric-label">Privado</div>
+                        <div class="metric-context">Arquivos nunca saem do PC</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🌙</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Dark Mode</div>
+                        <div class="metric-label">Persistente</div>
+                        <div class="metric-context">Salvo no localStorage</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">♿</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">A11y</div>
+                        <div class="metric-label">Acessível</div>
+                        <div class="metric-context">aria-labels e contraste</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🪶</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Leve</div>
+                        <div class="metric-label">Sem libs pesadas</div>
+                        <div class="metric-context">SVGs customizados</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="project-cta reveal">
+                    <p>Precisa unificar documentos com privacidade total?</p>
+                    <a href="../index.html#contact" class="btn btn-primary">Entre em Contato <span>→</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 VibeDev • Construído com <span class="text-gradient">Vibe Coding + IA</span></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

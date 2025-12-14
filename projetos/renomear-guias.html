@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Renomear Guias de Pagamento - IA identifica e renomeia automaticamente DARFs e guias de impostos usando Google Gemini.">
+    <title>Renomear Guias | Portfólio Vibe Coding + IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>Vibe<span
+                        class="text-gradient">Dev</span></span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projetos</a>
+                <a href="../index.html#method">Método</a>
+                <a href="../index.html#contact">Contato</a>
+            </div>
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content reveal">
+                    <nav class="breadcrumb">
+                        <a href="../index.html">Home</a><span>›</span>
+                        <a href="../index.html#projects">Projetos</a><span>›</span>
+                        <span>Renomear Guias</span>
+                    </nav>
+                    <div class="featured-badge">🏷️ IA + Produtividade</div>
+                    <h1>Renomear <span class="text-gradient">Guias</span></h1>
+                    <p>Automatiza identificação e renomeação de DARFs, guias de prefeitura e outros documentos de
+                        pagamento de impostos. A IA lê o conteúdo e aplica padrão de nomenclatura organizacional.</p>
+                    <div class="project-meta">
+                        <div class="meta-item"><span>📅</span><span>2025</span></div>
+                        <div class="meta-item"><span>🎯</span><span>Organização Fiscal</span></div>
+                        <div class="meta-item"><span>🏷️</span><span>React, Gemini, JSZip</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary-section">
+            <div class="container">
+                <div class="summary-grid">
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">🎯</div>
+                        <h3>O Problema</h3>
+                        <p>Arquivos de guias chegam com nomes genéricos (IMG_001.pdf, boleto.pdf). Abrir cada um, ler
+                            dados e renomear manualmente consome horas do departamento fiscal.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">💡</div>
+                        <h3>A Solução</h3>
+                        <p>IA Gemini 2.5 Flash lê imagens/PDFs e extrai: código do tributo, nome, data de vencimento e
+                            período de referência. Aplica padrão de nomenclatura automaticamente.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">📈</div>
+                        <h3>O Impacto</h3>
+                        <p>Arquivos renomeados no padrão: <code>MM DD AAAA [IMPOSTO] - REF. MM.AAAA.ext</code>. Download
+                            em lote via ZIP. Edição manual disponível.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🧠</span> Processamento Inteligente</h2>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step card reveal">
+                        <div class="step-number">📁</div>
+                        <div class="step-content">
+                            <h4>Ingestão</h4>
+                            <p>Drag & drop múltiplos arquivos. Aceita PDF, PNG, JPEG e WEBP. Status inicial
+                                "Aguardando".</p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">🤖</div>
+                        <div class="step-content">
+                            <h4>Análise IA</h4>
+                            <p>Gemini extrai taxCode, taxName, dueDate e referencePeriod via schema estruturado.
+                                Re-tentativa automática em falhas.</p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">🏷️</div>
+                        <div class="step-content">
+                            <h4>Normalização Brasileira</h4>
+                            <p>Código 8109 → PIS. Código 2172 → COFINS. "PREFEITURA" → ISS. Padronização de datas e
+                                períodos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🛠️</span> Funcionalidades</h2>
+                </div>
+                <div class="tech-challenges">
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Edição Manual</h4>
+                            <p>Se a IA errar, edite data/período/imposto antes de salvar</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Filtros por Status</h4>
+                            <p>Visualize: Todos, Sucesso, Aguardando ou Erro</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Download ZIP</h4>
+                            <p>Empacota todos os processados com data no nome</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-stack-section reveal">
+                    <h3>Stack Tecnológica</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React 18+</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Vite</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Gemini 2.5 Flash</span>
+                        <span class="tech-tag">@google/genai</span>
+                        <span class="tech-tag">JSZip</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="metrics-grid">
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">⚡</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Schema</div>
+                        <div class="metric-label">Estruturado</div>
+                        <div class="metric-context">JSON garantido sem alucinação</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🔄</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Retry</div>
+                        <div class="metric-label">Automático</div>
+                        <div class="metric-context">Re-processa arquivos com erro</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🎨</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Animações</div>
+                        <div class="metric-label">Slide-in</div>
+                        <div class="metric-context">UX fluida e responsiva</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🔔</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Toasts</div>
+                        <div class="metric-label">Feedback</div>
+                        <div class="metric-context">Notificações visuais</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="project-cta reveal">
+                    <p>Precisa organizar guias de pagamento automaticamente?</p>
+                    <a href="../index.html#contact" class="btn btn-primary">Entre em Contato <span>→</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 VibeDev • Construído com <span class="text-gradient">Vibe Coding + IA</span></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

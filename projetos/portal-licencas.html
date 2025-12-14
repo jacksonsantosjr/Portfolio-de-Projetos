@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portal de Licenças - Sistema completo para venda e controle de software SaaS com chaves de licença, validação remota e SDK para integração.">
+    <title>Portal de Licenças | Portfólio Vibe Coding + IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>Vibe<span
+                        class="text-gradient">Dev</span></span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projetos</a>
+                <a href="../index.html#method">Método</a>
+                <a href="../index.html#contact">Contato</a>
+            </div>
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content reveal">
+                    <nav class="breadcrumb">
+                        <a href="../index.html">Home</a><span>›</span>
+                        <a href="../index.html#projects">Projetos</a><span>›</span>
+                        <span>Portal de Licenças</span>
+                    </nav>
+                    <div class="featured-badge" style="background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);">
+                        🔑 SaaS Licensing</div>
+                    <h1>Portal de <span class="text-gradient">Licenças</span></h1>
+                    <p>Infraestrutura completa para monetização de software. Controle de chaves de licença, validação
+                        remota, portal de autoatendimento e SDK para integração em React/Angular.</p>
+                    <div class="project-meta">
+                        <div class="meta-item"><span>📅</span><span>2025</span></div>
+                        <div class="meta-item"><span>🎯</span><span>SaaS Licensing</span></div>
+                        <div class="meta-item"><span>🏷️</span><span>React, Supabase, Edge Functions</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary-section">
+            <div class="container">
+                <div class="summary-grid">
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">🎯</div>
+                        <h3>O Objetivo</h3>
+                        <p>Permitir que desenvolvedores monetizem aplicações através de chaves de licença controladas
+                            remotamente, com portal de autoatendimento para clientes.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">💡</div>
+                        <h3>A Solução</h3>
+                        <p>Portal React + Supabase Auth + Edge Functions para validação. SDK gerável via IA (Gemini)
+                            para integração automática em projetos de terceiros.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">📈</div>
+                        <h3>O Impacto</h3>
+                        <p>Licenças Ativa/Trial/Expirada. Polling de validação a cada 60s. Realtime sync. Download de
+                            SDK com componentes prontos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>👤</span> Portal do Cliente</h2>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step card reveal">
+                        <div class="step-number">🔐</div>
+                        <div class="step-content">
+                            <h4>Autenticação</h4>
+                            <p>Login via e-mail/senha (Supabase Auth). Recuperação de senha com fluxo completo. Rotas
+                                protegidas.</p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">🔑</div>
+                        <div class="step-content">
+                            <h4>Gestão de Licenças</h4>
+                            <p>Lista licenças com status visual. Cria novas chaves (Assinatura/Perpétua).
+                                Suspende/ativa. Supabase Realtime para sync instantâneo.</p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">📥</div>
+                        <div class="step-content">
+                            <h4>Catálogo e Downloads</h4>
+                            <p>Lista produtos disponíveis. Download só liberado se licença Ativa/Trial para aquele
+                                produto específico.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🛠️</span> Área do Desenvolvedor</h2>
+                </div>
+                <div class="tech-challenges">
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Guia de Integração</h4>
+                            <p>Documentação para integrar o sistema de licença em apps React/Angular</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Assistente IA (Gemini)</h4>
+                            <p>Cole seu App.tsx e a IA reescreve adicionando proteção de licença</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Download SDK</h4>
+                            <p>Gera ZIP (JSZip) com LicenseContext, LicenseModal e componentes prontos</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🔒</span> Proteção de Software</h2>
+                </div>
+                <div class="tech-challenges">
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Validação Híbrida</h4>
+                            <p>Valida na inicialização + polling a cada 60s para revogação em tempo real</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Gatekeeper Modal</h4>
+                            <p>Se licença inválida, renderiza bloqueio sobre a aplicação impedindo uso</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Edge Function</h4>
+                            <p>Supabase Edge Function (validate-license) para API segura</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-stack-section reveal">
+                    <h3>Stack Tecnológica</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React 19</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">Edge Functions</span>
+                        <span class="tech-tag">Gemini API</span>
+                        <span class="tech-tag">JSZip</span>
+                        <span class="tech-tag">Realtime</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="metrics-grid">
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📊</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Analytics</div>
+                        <div class="metric-label">Uso</div>
+                        <div class="metric-context">Gráficos Recharts de consumo</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🔔</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Notificações</div>
+                        <div class="metric-label">Alertas</div>
+                        <div class="metric-context">Sistema de avisos persistentes</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🌙</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Dark Mode</div>
+                        <div class="metric-label">Tema</div>
+                        <div class="metric-context">Persistência localStorage</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🔄</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Realtime</div>
+                        <div class="metric-label">Sync</div>
+                        <div class="metric-context">Atualização sem refresh</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="project-cta reveal">
+                    <p>Precisa monetizar seu software com controle de licenças?</p>
+                    <a href="../index.html#contact" class="btn btn-primary">Entre em Contato <span>→</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 VibeDev • Construído com <span class="text-gradient">Vibe Coding + IA</span></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

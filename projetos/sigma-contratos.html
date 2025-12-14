@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="SIGMA - Sistema de Gestão de Contratos Financeiros. Angular 20+, Supabase, D3.js, integração com BCB e Google Gemini.">
+    <title>SIGMA - Gestão de Contratos | Portfólio Vibe Coding + IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>Vibe<span
+                        class="text-gradient">Dev</span></span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projetos</a>
+                <a href="../index.html#method">Método</a>
+                <a href="../index.html#contact">Contato</a>
+            </div>
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content reveal">
+                    <nav class="breadcrumb">
+                        <a href="../index.html">Home</a><span>›</span>
+                        <a href="../index.html#projects">Projetos</a><span>›</span>
+                        <span>SIGMA</span>
+                    </nav>
+                    <div class="featured-badge" style="background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);">
+                        📊 Enterprise System</div>
+                    <h1>SIGMA <span class="text-gradient">Gestão de Contratos</span></h1>
+                    <p>Sistema completo para gestão de contratos financeiros com cálculos automatizados de parcelas,
+                        índices econômicos (SELIC, CDI, IPCA, TLP) e relatórios contábeis. O maior e mais complexo
+                        projeto do portfólio.</p>
+                    <div class="project-meta">
+                        <div class="meta-item"><span>📅</span><span>2025</span></div>
+                        <div class="meta-item"><span>🎯</span><span>FinTech Enterprise</span></div>
+                        <div class="meta-item"><span>🏷️</span><span>Angular 20+, Supabase, D3.js</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary-section">
+            <div class="container">
+                <div class="summary-grid">
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">🎯</div>
+                        <h3>O Problema</h3>
+                        <p>Gestão de contratos financeiros complexos (Leasing, BNDES, REFROTA) com múltiplas modalidades
+                            de cálculo, índices econômicos variáveis e relatórios contábeis exigentes.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">💡</div>
+                        <h3>A Solução</h3>
+                        <p>Sistema Angular modular com 14 módulos, 22 serviços, motor de cálculos para 5 modalidades
+                            (SAC, Price, SELIC, TLP, CDI), integrado com BCB e Google Gemini.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">📈</div>
+                        <h3>O Impacto</h3>
+                        <p>Automação de cálculos complexos de juros pro-rata, correção monetária e amortização.
+                            Relatórios contábeis e financeiros com 20+ campos gerados automaticamente.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🏗️</span> Arquitetura do Sistema</h2>
+                    <p>14 módulos principais + 22 serviços especializados</p>
+                </div>
+                <div class="tech-challenges">
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Frontend</h4>
+                            <p>Angular 20+ com Standalone Components, D3.js para gráficos interativos e Tailwind CSS</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Backend</h4>
+                            <p>Supabase (PostgreSQL + Auth + Storage) com Row Level Security e Edge Functions</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Integrações</h4>
+                            <p>Brasil API (CNPJ/Feriados), Banco Central (IPCA/SELIC/CDI), Google Gemini (OCR)</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>📊</span> Módulos Principais</h2>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step card reveal">
+                        <div class="step-number">📈</div>
+                        <div class="step-content">
+                            <h4>Dashboard (1016 linhas)</h4>
+                            <p>Visão geral com gráficos D3.js: linhas (evolução temporal), barras (por banco), pizza
+                                (por modalidade). Filtros por banco, empresa e modalidade.</p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">📋</div>
+                        <div class="step-content">
+                            <h4>Cadastros (7 módulos)</h4>
+                            <p><strong>Empresas</strong> (Brasil API), <strong>Contratos</strong> (campos dinâmicos +
+                                anexos), <strong>Bancos</strong>, <strong>Índices</strong> (IPCA/SELIC/CDI/TR),
+                                <strong>Taxas</strong>, <strong>Feriados</strong>, <strong>Usuários</strong> (4 perfis).
+                            </p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">🧮</div>
+                        <div class="step-content">
+                            <h4>Motor de Cálculos (1079 linhas)</h4>
+                            <p>5 modalidades: <strong>TLP</strong> (BNDES), <strong>SELIC</strong> (Mercedes),
+                                <strong>REFROTA</strong> (FGTS), <strong>LEASING CDI</strong> (BB),
+                                <strong>Pré-fixado</strong>. Cálculo de dias úteis, juros pro-rata e correção monetária.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">📄</div>
+                        <div class="step-content">
+                            <h4>Relatórios (2133 linhas)</h4>
+                            <p><strong>Contábil:</strong> Saldo do mês, CM, Principal atualizado, Juros
+                                (FGTS/Spread/Risco), Curto/Longo prazo. <strong>Financeiro:</strong> Visão consolidada.
+                                Exportação Excel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🏦</span> Bancos e Modalidades</h2>
+                </div>
+                <div class="tech-challenges">
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Mercedes Benz</h4>
+                            <p>SELIC e REFROTA com UPRD-P</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Banco do Brasil</h4>
+                            <p>LEASING CDI acumulado</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>BNDES</h4>
+                            <p>TLP (IPCA + Spread + Juros)</p>
+                        </div>
+                    </div>
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Santander/Votorantim</h4>
+                            <p>Pré-fixado (taxa fixa)</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>CNH Industrial</h4>
+                            <p>SELIC</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Bradesco</h4>
+                            <p>Múltiplas modalidades</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🔐</span> Sistema de Permissões</h2>
+                </div>
+                <div class="metrics-grid">
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">👑</div>
+                        <div class="metric-value" style="font-size: 1.2rem;">Admin</div>
+                        <div class="metric-label">Acesso Total</div>
+                        <div class="metric-context">Usuários + Configurações</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">💰</div>
+                        <div class="metric-value" style="font-size: 1.2rem;">Financeiro</div>
+                        <div class="metric-label">Cálculos</div>
+                        <div class="metric-context">Contratos + Relatórios</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📚</div>
+                        <div class="metric-value" style="font-size: 1.2rem;">Contabilidade</div>
+                        <div class="metric-label">Relatórios</div>
+                        <div class="metric-context">Visualização + Export</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📊</div>
+                        <div class="metric-value" style="font-size: 1.2rem;">Diretoria</div>
+                        <div class="metric-label">Dashboards</div>
+                        <div class="metric-context">Visão Gerencial</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>📈</span> Métricas do Projeto</h2>
+                </div>
+                <div class="metrics-grid">
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🧩</div>
+                        <div class="metric-value">14</div>
+                        <div class="metric-label">Módulos</div>
+                        <div class="metric-context">Componentes principais</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">⚙️</div>
+                        <div class="metric-value">22</div>
+                        <div class="metric-label">Serviços</div>
+                        <div class="metric-context">Lógica de negócio</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📝</div>
+                        <div class="metric-value">2133</div>
+                        <div class="metric-label">Linhas</div>
+                        <div class="metric-context">Maior componente</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🔗</div>
+                        <div class="metric-value">15</div>
+                        <div class="metric-label">Rotas</div>
+                        <div class="metric-context">Endpoints configurados</div>
+                    </div>
+                </div>
+                <div class="tech-stack-section reveal">
+                    <h3>Stack Tecnológica</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">Angular 20+</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Standalone Components</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">D3.js</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Brasil API</span>
+                        <span class="tech-tag">BCB API</span>
+                        <span class="tech-tag">Google Gemini</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🔔</span> Funcionalidades Extras</h2>
+                </div>
+                <div class="tech-challenges">
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Notificações</h4>
+                            <p>DueDate, Overdue, ContractEnd. Periodicidade: diário, semanal, mensal.</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Gemini OCR</h4>
+                            <p>Extração automática de dados de PDFs de contratos.</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Campos Dinâmicos</h4>
+                            <p>Configuração flexível de campos por tipo de contrato.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="project-cta reveal">
+                    <p>Interessado em um sistema de gestão financeira enterprise?</p>
+                    <a href="../index.html#contact" class="btn btn-primary">Entre em Contato <span>→</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 VibeDev • Construído com <span class="text-gradient">Vibe Coding + IA</span></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

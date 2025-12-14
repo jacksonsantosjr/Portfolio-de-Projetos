@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Conferência de NFs 2.0 - Automação de conciliação financeira entre sistemas FLUIG e RM. Elimina comparação manual e identifica divergências automaticamente.">
+    <title>Conferência de NFs 2.0 | Portfólio Vibe Coding + IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span>Vibe<span class="text-gradient">Dev</span></span>
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projetos</a>
+                <a href="../index.html#method">Método</a>
+                <a href="../index.html#contact">Contato</a>
+            </div>
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content reveal">
+                    <nav class="breadcrumb">
+                        <a href="../index.html">Home</a><span>›</span>
+                        <a href="../index.html#projects">Projetos</a><span>›</span>
+                        <span>Conferência de NFs</span>
+                    </nav>
+                    <div class="featured-badge">📋 Automação Fiscal</div>
+                    <h1>Conferência de NFs <span class="text-gradient">2.0</span></h1>
+                    <p>Automação de conciliação financeira entre sistemas FLUIG e RM. Elimina a comparação manual linha
+                        a linha no Excel, identificando automaticamente discrepâncias de valores, impostos e dados
+                        cadastrais.</p>
+                    <div class="project-meta">
+                        <div class="meta-item"><span>📅</span><span>2025</span></div>
+                        <div class="meta-item"><span>🎯</span><span>Auditoria Fiscal</span></div>
+                        <div class="meta-item"><span>🏷️</span><span>React, TypeScript, SheetJS</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary-section">
+            <div class="container">
+                <div class="summary-grid">
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">🎯</div>
+                        <h3>O Problema</h3>
+                        <p>Financeiros precisam garantir que NFs lançadas no FLUIG foram integradas corretamente no ERP
+                            (RM). A comparação manual via PROCV no Excel é lenta, propensa a erros e frustrante.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">💡</div>
+                        <h3>A Solução</h3>
+                        <p>Motor de conciliação automático que indexa dados, compara campo a campo (valores, impostos,
+                            metadados) e classifica cada nota como Conciliado, Divergente ou Apenas em FLUIG.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">📈</div>
+                        <h3>O Impacto</h3>
+                        <p>Redução de 80% no tempo de conferência. Tolerância de 3 centavos para ignorar
+                            arredondamentos. Dashboard com gráficos e exportação para Excel.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>⚙️</span> Motor de Conciliação</h2>
+                    <p>O "cérebro" da aplicação em detalhes</p>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step card reveal">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Indexação Hash Map</h4>
+                            <p>Cria um mapa dos dados do RM usando "Número do Documento" como chave para busca rápida
+                                O(1). Performance otimizada mesmo com milhares de registros.</p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Comparação Campo a Campo</h4>
+                            <p><strong>Metadados:</strong> Coligada e Filial. <strong>Financeiro:</strong> Valor Bruto e
+                                Líquido. <strong>Impostos:</strong> IRRF, INSS, ISS. <strong>CSRF:</strong> Soma PIS +
+                                COFINS + CSLL do FLUIG para comparar com valor consolidado do RM.</p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Classificação Inteligente</h4>
+                            <p>Aplica tolerância de 0.03 (3 centavos) para arredondamentos. Classifica como: <span
+                                    style="color: #22c55e;">✓ Conciliado</span>, <span style="color: #eab308;">⚠ Com
+                                    Divergência</span> ou <span style="color: #ef4444;">✕ Apenas em FLUIG</span>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🛠️</span> Arquitetura Técnica</h2>
+                </div>
+                <div class="tech-challenges">
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Sanitização de Dados</h4>
+                            <p>Algoritmo robusto (safeParseFloat) para formatos BR (1.234,56) e US (1,234.56)</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Mapeamento Flexível</h4>
+                            <p>Arquivo constants.ts mapeia colunas do Excel para propriedades internas</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>100% Client-Side</h4>
+                            <p>Processamento no navegador - dados financeiros nunca saem da máquina</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-stack-section reveal">
+                    <h3>Stack Tecnológica</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React 19</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">SheetJS (xlsx)</span>
+                        <span class="tech-tag">Recharts</span>
+                        <span class="tech-tag">esbuild</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>📊</span> Interface e Resultados</h2>
+                </div>
+                <div class="metrics-grid">
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📊</div>
+                        <div class="metric-value" style="font-size: 1.5rem;">Dashboard</div>
+                        <div class="metric-label">Cards de Resumo</div>
+                        <div class="metric-context">Totais processados, conciliados e divergentes</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🥧</div>
+                        <div class="metric-value" style="font-size: 1.5rem;">PieChart</div>
+                        <div class="metric-label">Visualização Rápida</div>
+                        <div class="metric-context">Gráfico de rosca da saúde da conciliação</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">💡</div>
+                        <div class="metric-value" style="font-size: 1.5rem;">Tooltips</div>
+                        <div class="metric-label">Detalhes ao Hover</div>
+                        <div class="metric-context">Valor FLUIG vs RM em cada divergência</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📥</div>
+                        <div class="metric-value" style="font-size: 1.5rem;">Excel</div>
+                        <div class="metric-label">Exportação</div>
+                        <div class="metric-context">Relatório com 2 abas: Detalhes + Resumo</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="links-grid">
+                    <a href="#" class="card link-card reveal">
+                        <div class="link-icon">🚀</div>
+                        <div class="link-info">
+                            <h4>Demo ao Vivo</h4>
+                            <p>Experimente a conferência</p>
+                        </div>
+                    </a>
+                    <a href="#" class="card link-card reveal">
+                        <div class="link-icon">📂</div>
+                        <div class="link-info">
+                            <h4>Repositório GitHub</h4>
+                            <p>Código fonte</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="project-cta reveal">
+                    <p>Interessado em automatizar conferências fiscais na sua empresa?</p>
+                    <a href="../index.html#contact" class="btn btn-primary">Entre em Contato <span>→</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 VibeDev • Construído com <span class="text-gradient">Vibe Coding + IA</span></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

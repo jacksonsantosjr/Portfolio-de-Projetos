@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Classificador NCM Inteligente - IA que classifica mercadorias usando regras RGI e NESH com justificativa técnica e score de confiança.">
+    <title>Classificador NCM | Portfólio Vibe Coding + IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>Vibe<span
+                        class="text-gradient">Dev</span></span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projetos</a>
+                <a href="../index.html#method">Método</a>
+                <a href="../index.html#contact">Contato</a>
+            </div>
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content reveal">
+                    <nav class="breadcrumb">
+                        <a href="../index.html">Home</a><span>›</span>
+                        <a href="../index.html#projects">Projetos</a><span>›</span>
+                        <span>Classificador NCM</span>
+                    </nav>
+                    <div class="featured-badge">🏷️ Comércio Exterior</div>
+                    <h1>Classificador <span class="text-gradient">NCM</span></h1>
+                    <p>IA que classifica mercadorias usando Regras Gerais de Interpretação (RGI) e Notas Explicativas
+                        (NESH). Retorna código NCM, descrição oficial, justificativa técnica e score de confiança.</p>
+                    <div class="project-meta">
+                        <div class="meta-item"><span>📅</span><span>2025</span></div>
+                        <div class="meta-item"><span>🎯</span><span>Classificação Fiscal</span></div>
+                        <div class="meta-item"><span>🏷️</span><span>React, Gemini, xlsx</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary-section">
+            <div class="container">
+                <div class="summary-grid">
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">🎯</div>
+                        <h3>O Problema</h3>
+                        <p>Classificação NCM é complexa e requer conhecimento das 6 RGIs e das Notas Explicativas
+                            (NESH). Erros geram multas, retenções e problemas de compliance.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">💡</div>
+                        <h3>A Solução</h3>
+                        <p>IA configurada como "Engenheiro de classificação fiscal" analisa descrições e retorna NCM +
+                            justificativa técnica. Temperature 0.1 para respostas determinísticas.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">📈</div>
+                        <h3>O Impacto</h3>
+                        <p>Processamento em lote (múltiplas descrições). Score de confiança visual. Exportação para
+                            Excel. Suporte a arquivo TXT/CSV.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🧠</span> O "Cérebro" da Aplicação</h2>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step card reveal">
+                        <div class="step-number">🎭</div>
+                        <div class="step-content">
+                            <h4>System Instruction</h4>
+                            <p>IA configurada como "Engenheiro de classificação fiscal experiente" que usa RGI (Regras
+                                Gerais de Interpretação) e NESH (Notas Explicativas).</p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">📋</div>
+                        <div class="step-content">
+                            <h4>Structured Output</h4>
+                            <p>ResponseSchema força resposta em JSON com: código NCM 8 dígitos, descrição oficial,
+                                justificativa técnica e score de confiança (0-100%).</p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">🎯</div>
+                        <div class="step-content">
+                            <h4>Temperature 0.1</h4>
+                            <p>Configuração baixa para respostas determinísticas e menos "criativas" - crucial para
+                                dados fiscais onde precisão é obrigatória.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>📊</span> Resultados por Produto</h2>
+                </div>
+                <div class="tech-challenges">
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Código NCM</h4>
+                            <p>8 dígitos da classificação sugerida</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Descrição Oficial</h4>
+                            <p>Nomenclatura formal da tabela NCM</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Justificativa</h4>
+                            <p>Explicação técnica (material, função)</p>
+                        </div>
+                    </div>
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col" style="flex: 2;">
+                            <h4>Score de Confiança</h4>
+                            <p>Barra de progresso colorida: <span style="color: #22c55e;">Verde</span> (alta), <span
+                                    style="color: #eab308;">Amarelo</span> (média), <span
+                                    style="color: #ef4444;">Vermelho</span> (baixa)</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Exportação Excel</h4>
+                            <p>Relatório completo formatado</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-stack-section reveal">
+                    <h3>Stack Tecnológica</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React 19</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Vite</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Gemini 2.5 Flash</span>
+                        <span class="tech-tag">@google/genai</span>
+                        <span class="tech-tag">xlsx</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="metrics-grid">
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📝</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Manual</div>
+                        <div class="metric-label">Digitação</div>
+                        <div class="metric-context">Digite ou cole descrições</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📦</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Lote</div>
+                        <div class="metric-label">Múltiplas</div>
+                        <div class="metric-context">Uma descrição por linha</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📁</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Upload</div>
+                        <div class="metric-label">Arquivo</div>
+                        <div class="metric-context">Suporte TXT e CSV</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🌙</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Dark Mode</div>
+                        <div class="metric-label">Tema</div>
+                        <div class="metric-context">Persistência localStorage</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="project-cta reveal">
+                    <p>Precisa classificar mercadorias com precisão e agilidade?</p>
+                    <a href="../index.html#contact" class="btn btn-primary">Entre em Contato <span>→</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 VibeDev • Construído com <span class="text-gradient">Vibe Coding + IA</span></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

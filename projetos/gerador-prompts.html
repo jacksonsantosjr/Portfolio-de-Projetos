@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Gerador de Prompts Inteligentes - Aplicação web que transforma ideias vagas em prompts estruturados usando Google Gemini. Modo Gerador e Analisador.">
+    <meta name="keywords" content="Gerador de Prompts, Prompt Engineering, Gemini, IA, Vibe Coding, React, TypeScript">
+
+    <title>Gerador de Prompts Inteligentes | Portfólio Vibe Coding + IA</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span>Vibe<span class="text-gradient">Dev</span></span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projetos</a>
+                <a href="../index.html#method">Método</a>
+                <a href="../index.html#contact">Contato</a>
+            </div>
+
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             PROJECT HERO
+             ══════════════════════════════════════════════════════════════════════ -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content reveal">
+                    <nav class="breadcrumb">
+                        <a href="../index.html">Home</a>
+                        <span>›</span>
+                        <a href="../index.html#projects">Projetos</a>
+                        <span>›</span>
+                        <span>Gerador de Prompts</span>
+                    </nav>
+
+                    <div class="featured-badge">
+                        ⭐ Projeto em Destaque
+                    </div>
+
+                    <h1>Gerador de Prompts <span class="text-gradient">Inteligentes</span></h1>
+
+                    <p>
+                        Uma aplicação web que atua como intermediário inteligente entre usuários
+                        e Grandes Modelos de Linguagem (LLMs), utilizando o Google Gemini para
+                        refinar ideias vagas em prompts estruturados ou analisar prompts existentes.
+                    </p>
+
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span>📅</span>
+                            <span>2025</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>🎯</span>
+                            <span>Produtividade com IA</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>🏷️</span>
+                            <span>React, TypeScript, Gemini API</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SEÇÃO 1: SUMÁRIO EXECUTIVO
+             ══════════════════════════════════════════════════════════════════════ -->
+        <section class="summary-section">
+            <div class="container">
+                <div class="summary-grid">
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">🎯</div>
+                        <h3>O Problema</h3>
+                        <p>
+                            Usuários desperdiçam tempo com prompts mal estruturados que geram
+                            respostas imprecisas. Desde iniciantes que não sabem formular pedidos
+                            até avançados que querem iterar rapidamente.
+                        </p>
+                    </div>
+
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">💡</div>
+                        <h3>A Solução</h3>
+                        <p>
+                            Ferramenta que eleva a qualidade do input com refinamentos inteligentes
+                            (persona, tom, formato, contexto) e oferece educação assistida através
+                            de análises críticas e didáticas.
+                        </p>
+                    </div>
+
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">📈</div>
+                        <h3>O Impacto</h3>
+                        <p>
+                            Redução de alucinação e ambiguidade nas respostas. Fluxo rápido de
+                            "Ideia → Prompt Pronto" com cópia rápida e re-refinamento iterativo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SEÇÃO 2: FUNCIONALIDADES DETALHADAS
+             ══════════════════════════════════════════════════════════════════════ -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>⚙️</span> Funcionalidades Detalhadas</h2>
+                    <p>Dois modos distintos para diferentes necessidades</p>
+                </div>
+
+                <div class="process-steps">
+                    <div class="process-step card reveal">
+                        <div class="step-number">🎯</div>
+                        <div class="step-content">
+                            <h4>Modo Gerador (Generator Mode)</h4>
+                            <p>
+                                O usuário entra com uma ideia bruta e a ferramenta a expande em um prompt
+                                profissional. Inclui <strong>5 categorias de refinamento</strong>:
+                            </p>
+                            <ul style="margin-top: 1rem; color: var(--text-secondary);">
+                                <li style="margin-bottom: 0.5rem;">🎭 <strong>Persona:</strong> Define quem a IA deve
+                                    ser (ex: "Um explorador espacial")</li>
+                                <li style="margin-bottom: 0.5rem;">🎨 <strong>Tom de Voz:</strong> Define o estilo
+                                    (Profissional, Poético, Técnico)</li>
+                                <li style="margin-bottom: 0.5rem;">📋 <strong>Formato:</strong> Define a estrutura
+                                    (Markdown, JSON, Lista)</li>
+                                <li style="margin-bottom: 0.5rem;">📖 <strong>Contexto:</strong> Adiciona informações de
+                                    fundo</li>
+                                <li>🎓 <strong>Especialista:</strong> Instrui a IA a usar conhecimento de domínio
+                                    específico</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="process-step card reveal">
+                        <div class="step-number">📊</div>
+                        <div class="step-content">
+                            <h4>Modo Analisador (Analyzer Mode)</h4>
+                            <p>
+                                O usuário entra com um prompt existente e recebe uma análise crítica
+                                completa. A saída é um <strong>relatório didático</strong> contendo:
+                            </p>
+                            <ul style="margin-top: 1rem; color: var(--text-secondary);">
+                                <li style="margin-bottom: 0.5rem;">✅ <strong>Pontos Fortes:</strong> O que está
+                                    funcionando bem</li>
+                                <li style="margin-bottom: 0.5rem;">🤔 <strong>Áreas para Melhoria:</strong>
+                                    Oportunidades de otimização</li>
+                                <li>💡 <strong>Sugestão de Prompt Revisado:</strong> Versão melhorada pronta para uso
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="process-step card reveal">
+                        <div class="step-number">✨</div>
+                        <div class="step-content">
+                            <h4>Recursos Adicionais</h4>
+                            <p>
+                                Funcionalidades que elevam a experiência do usuário:
+                            </p>
+                            <ul style="margin-top: 1rem; color: var(--text-secondary);">
+                                <li style="margin-bottom: 0.5rem;">💫 <strong>Inspire-me:</strong> Preenche com exemplos
+                                    criativos pré-definidos</li>
+                                <li style="margin-bottom: 0.5rem;">⚡ <strong>Streaming:</strong> Prompt gerado em tempo
+                                    real com feedback visual</li>
+                                <li style="margin-bottom: 0.5rem;">🔄 <strong>Loop de Refinamento:</strong> Re-refina o
+                                    resultado com um clique</li>
+                                <li>🌙 <strong>Dark/Light Mode:</strong> Temas persistidos no localStorage</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SEÇÃO 3: ARQUITETURA TÉCNICA
+             ══════════════════════════════════════════════════════════════════════ -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🛠️</span> Arquitetura Técnica</h2>
+                    <p>Stack moderna focada em performance e experiência do usuário</p>
+                </div>
+
+                <div class="tech-challenges">
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Frontend</h4>
+                            <p>React 19 + TypeScript com imports via CDN para bundle otimizado</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Estilização</h4>
+                            <p>Tailwind CSS com suporte nativo a Dark Mode e responsividade</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Build</h4>
+                            <p>Vite para desenvolvimento rápido e builds otimizados</p>
+                        </div>
+                    </div>
+
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>IA / Backend</h4>
+                            <p>Integração direta client-side com Google GenAI SDK (@google/genai)</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Modelo</h4>
+                            <p>Gemini 2.5 Flash - equilíbrio entre velocidade e capacidade de raciocínio</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Segurança</h4>
+                            <p>API Key via variável de ambiente com tratamento de erros robusto</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack-section reveal">
+                    <h3>Stack Tecnológica Completa</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React 19</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Vite</span>
+                        <span class="tech-tag">Google Gemini 2.5</span>
+                        <span class="tech-tag">@google/genai SDK</span>
+                        <span class="tech-tag">localStorage API</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SEÇÃO 4: VIBE CODING APLICADO
+             ══════════════════════════════════════════════════════════════════════ -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🧠</span> Vibe Coding + IA Aplicados</h2>
+                    <p>Onde a intuição encontrou a tecnologia neste projeto</p>
+                </div>
+
+                <div class="process-steps">
+                    <div class="process-step card reveal">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>System Instructions Refinadas</h4>
+                            <p>
+                                Criei instruções de sistema robustas que garantem que o Gemini mantenha
+                                o personagem de "assistente de prompt" e não responda à pergunta do usuário,
+                                mas sim trabalhe <em>sobre</em> a pergunta. Isso foi resultado de
+                                experimentação intuitiva.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step card reveal">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>UX Orientada por Fluxo</h4>
+                            <p>
+                                A interface foi desenhada para manter o usuário em estado de fluxo:
+                                ícones intuitivos, botões de cópia com feedback visual, animações suaves
+                                de transição entre modos. Cada detalhe surgiu de sessões de
+                                desenvolvimento intenso e focado.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step card reveal">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>Iteração com Streaming</h4>
+                            <p>
+                                A escolha de exibir o prompt via streaming não foi apenas técnica,
+                                mas uma decisão de UX: o feedback visual imediato mantém o usuário
+                                engajado e reduz a percepção de tempo de espera.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SEÇÃO 5: RESULTADOS E PÚBLICO-ALVO
+             ══════════════════════════════════════════════════════════════════════ -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>📊</span> Público-Alvo e Objetivos</h2>
+                    <p>Para quem foi construído e o que resolve</p>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🌱</div>
+                        <div class="metric-value" style="font-size: 1.5rem;">Iniciantes</div>
+                        <div class="metric-label">Em IA</div>
+                        <div class="metric-context">Usuários que não sabem formular pedidos eficazes</div>
+                    </div>
+
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🚀</div>
+                        <div class="metric-value" style="font-size: 1.5rem;">Avançados</div>
+                        <div class="metric-label">Iteração Rápida</div>
+                        <div class="metric-context">Profissionais que querem otimizar seus prompts</div>
+                    </div>
+
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📚</div>
+                        <div class="metric-value" style="font-size: 1.5rem;">Educação</div>
+                        <div class="metric-label">Assistida</div>
+                        <div class="metric-context">Aprenda engenharia de prompt com feedback prático</div>
+                    </div>
+
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">⚡</div>
+                        <div class="metric-value" style="font-size: 1.5rem;">Produtividade</div>
+                        <div class="metric-label">Máxima</div>
+                        <div class="metric-context">Fluxo rápido de Ideia → Prompt Pronto</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SEÇÃO 6: LINKS E PRÓXIMOS PASSOS
+             ══════════════════════════════════════════════════════════════════════ -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🔗</span> Links e Próximos Passos</h2>
+                    <p>Explore mais sobre este projeto</p>
+                </div>
+
+                <div class="links-grid">
+                    <a href="#" class="card link-card reveal">
+                        <div class="link-icon">🚀</div>
+                        <div class="link-info">
+                            <h4>Demo ao Vivo</h4>
+                            <p>Experimente o Gerador em ação</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="card link-card reveal">
+                        <div class="link-icon">📂</div>
+                        <div class="link-info">
+                            <h4>Repositório GitHub</h4>
+                            <p>Código fonte e documentação</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="card link-card reveal">
+                        <div class="link-icon">📄</div>
+                        <div class="link-info">
+                            <h4>Documentação</h4>
+                            <p>Guia completo de uso</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-cta reveal">
+                    <p>
+                        Interessado neste projeto? Vamos conversar sobre como posso
+                        aplicar essa abordagem no seu desafio.
+                    </p>
+                    <a href="../index.html#contact" class="btn btn-primary">
+                        Entre em Contato
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation to Other Projects -->
+        <section class="content-section" style="padding-top: 0;">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Outros <span class="text-gradient">Projetos</span></h2>
+                </div>
+
+                <div class="projects-grid" style="max-width: 800px; margin: 0 auto;">
+                    <a href="prisma-fiscal.html" class="card project-card reveal">
+                        <div class="project-thumbnail">⚖️</div>
+                        <div class="project-tags">
+                            <span class="tag">SaaS</span>
+                            <span class="tag">RAG</span>
+                        </div>
+                        <h4>Prisma Fiscal Enterprise</h4>
+                        <p>Plataforma de inteligência tributária para a Reforma</p>
+                        <span class="project-link">Ver detalhes →</span>
+                    </a>
+
+                    <a href="conferencia-nfs.html" class="card project-card reveal">
+                        <div class="project-thumbnail">📋</div>
+                        <div class="project-tags">
+                            <span class="tag">Automação</span>
+                            <span class="tag">Fiscal</span>
+                        </div>
+                        <h4>Conferência de NFs 2.0</h4>
+                        <p>Automação inteligente de conferência fiscal</p>
+                        <span class="project-link">Ver detalhes →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                © 2025 VibeDev • Construído com
+                <span class="text-gradient">Vibe Coding + IA</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

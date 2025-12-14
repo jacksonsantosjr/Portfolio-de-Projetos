@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Sistema de Gestão de Tarefas - Plataforma completa com timesheet, CRUD de empresas, dashboard analítico e integração BrasilAPI.">
+    <title>Gestão de Tarefas | Portfólio Vibe Coding + IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>Vibe<span
+                        class="text-gradient">Dev</span></span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projetos</a>
+                <a href="../index.html#method">Método</a>
+                <a href="../index.html#contact">Contato</a>
+            </div>
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content reveal">
+                    <nav class="breadcrumb">
+                        <a href="../index.html">Home</a><span>›</span>
+                        <a href="../index.html#projects">Projetos</a><span>›</span>
+                        <span>Gestão de Tarefas</span>
+                    </nav>
+                    <div class="featured-badge">📊 Produtividade</div>
+                    <h1>Gestão de <span class="text-gradient">Tarefas</span></h1>
+                    <p>Plataforma centralizada para gerenciamento de tarefas corporativas com CRUD de empresas, alocação
+                        a usuários e timesheet preciso. Foco em análise de dados e relatórios visuais.</p>
+                    <div class="project-meta">
+                        <div class="meta-item"><span>📅</span><span>2025</span></div>
+                        <div class="meta-item"><span>🎯</span><span>Gestão de Tempo</span></div>
+                        <div class="meta-item"><span>🏷️</span><span>React, Supabase, Recharts</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary-section">
+            <div class="container">
+                <div class="summary-grid">
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">🎯</div>
+                        <h3>O Objetivo</h3>
+                        <p>Oferecer plataforma para gestão de tarefas por cliente/empresa, com rastreamento preciso de
+                            tempo (timesheet) e relatórios visuais para tomada de decisão.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">💡</div>
+                        <h3>A Solução</h3>
+                        <p>SPA React + Supabase com módulos de Empresas (CNPJ via BrasilAPI), Tarefas
+                            (status/prioridade), Timesheet (cronômetro) e Dashboard analítico.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">📈</div>
+                        <h3>O Impacto</h3>
+                        <p>KPIs visuais, gráficos de pizza/barra, exportação Excel/PNG. Rascunho automático de
+                            formulários. Sidebar colapsável. Multi-empresa.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>📋</span> Módulos do Sistema</h2>
+                </div>
+                <div class="tech-challenges">
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Dashboard</h4>
+                            <p>KPIs: Total Tarefas, Concluídas, Horas, Empresas. Pizza (status) + Barras (top 5
+                                empresas)</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Empresas (CRM)</h4>
+                            <p>CRUD completo. CNPJ busca BrasilAPI (Razão Social, Endereço, CNAE). Ações em massa.</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Tarefas</h4>
+                            <p>Vínculo a empresas. Responsável/Criador. Status, Prioridade, Prazo, Estimativa. Badges
+                                coloridos.</p>
+                        </div>
+                    </div>
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Timesheet</h4>
+                            <p>Cronômetro Play/Stop. Lançamento manual. Filtros por Usuário/Tarefa/Período. Exportação
+                                Excel.</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Relatórios KPIs</h4>
+                            <p>Tempo médio por tipo. Horas por empresa. Evolução diária. Estimado vs Real. Export
+                                CSV/PNG.</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Auto-Save</h4>
+                            <p>Rascunho de formulários no localStorage. Recupera dados se fechar sem querer.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🛠️</span> Arquitetura</h2>
+                </div>
+                <div class="tech-stack-section reveal">
+                    <h3>Stack Tecnológica</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React 19</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">React Router</span>
+                        <span class="tech-tag">Recharts</span>
+                        <span class="tech-tag">exceljs</span>
+                        <span class="tech-tag">canvg</span>
+                        <span class="tech-tag">BrasilAPI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="metrics-grid">
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">⏱️</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Cronômetro</div>
+                        <div class="metric-label">Timesheet</div>
+                        <div class="metric-context">Play/Stop automático</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🏢</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">BrasilAPI</div>
+                        <div class="metric-label">CNPJ</div>
+                        <div class="metric-context">Preenchimento automático</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📊</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Recharts</div>
+                        <div class="metric-label">Gráficos</div>
+                        <div class="metric-context">Pizza, Barra, Linha</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📥</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Multi-Export</div>
+                        <div class="metric-label">Formatos</div>
+                        <div class="metric-context">Excel, CSV, PNG</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="project-cta reveal">
+                    <p>Precisa de um sistema de gestão de tarefas com timesheet?</p>
+                    <a href="../index.html#contact" class="btn btn-primary">Entre em Contato <span>→</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 VibeDev • Construído com <span class="text-gradient">Vibe Coding + IA</span></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

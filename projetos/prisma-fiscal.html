@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Prisma Fiscal Enterprise - Plataforma SaaS de inteligência tributária para a Reforma Tributária Brasileira. Arquitetura RAG com 18 módulos integrados.">
+    <meta name="keywords"
+        content="Prisma Fiscal, Reforma Tributária, CBS, IBS, SaaS, RAG, Inteligência Tributária, Supabase, Gemini">
+
+    <title>Prisma Fiscal Enterprise | Portfólio Vibe Coding + IA</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span>Vibe<span class="text-gradient">Dev</span></span>
+            </a>
+
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projetos</a>
+                <a href="../index.html#method">Método</a>
+                <a href="../index.html#contact">Contato</a>
+            </div>
+
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="main-content">
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             PROJECT HERO
+             ══════════════════════════════════════════════════════════════════════ -->
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content reveal">
+                    <nav class="breadcrumb">
+                        <a href="../index.html">Home</a>
+                        <span>›</span>
+                        <a href="../index.html#projects">Projetos</a>
+                        <span>›</span>
+                        <span>Prisma Fiscal</span>
+                    </nav>
+
+                    <div class="featured-badge" style="background: linear-gradient(135deg, #22d3ee 0%, #6366f1 100%);">
+                        ⚖️ Edição Enterprise
+                    </div>
+
+                    <h1>Prisma <span class="text-gradient">Fiscal</span></h1>
+
+                    <p>
+                        Plataforma SaaS de inteligência tributária projetada para guiar empresas
+                        e contadores durante a transição da Reforma Tributária Brasileira
+                        (EC 132/2023 e PLP 68/2024). Não apenas uma ferramenta de consulta,
+                        mas um <strong>Consultor Jurídico-Digital Ativo</strong>.
+                    </p>
+
+                    <div class="project-meta">
+                        <div class="meta-item">
+                            <span>📅</span>
+                            <span>2025</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>🎯</span>
+                            <span>SaaS Enterprise</span>
+                        </div>
+                        <div class="meta-item">
+                            <span>🏷️</span>
+                            <span>React, Supabase, Gemini, RAG</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SEÇÃO 1: SUMÁRIO EXECUTIVO
+             ══════════════════════════════════════════════════════════════════════ -->
+        <section class="summary-section">
+            <div class="container">
+                <div class="summary-grid">
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">🎯</div>
+                        <h3>O Problema</h3>
+                        <p>
+                            A Reforma Tributária traz complexidade sem precedentes. Empresas
+                            precisam interpretar leis, calcular impactos e adaptar operações
+                            em um cenário de transição de 8 anos (2026-2033).
+                        </p>
+                    </div>
+
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">💡</div>
+                        <h3>A Solução</h3>
+                        <p>
+                            Uma plataforma que interpreta a lei, aplica ao contexto específico
+                            da empresa (CNAE/Regime) e realiza cálculos complexos de impacto
+                            financeiro e operacional automaticamente.
+                        </p>
+                    </div>
+
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">📈</div>
+                        <h3>O Impacto</h3>
+                        <p>
+                            18 módulos integrados cobrindo diagnóstico, simulação, compliance
+                            e planejamento. Respostas fundamentadas em legislação oficial
+                            com citações de artigos e parágrafos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SEÇÃO 2: ARQUITETURA DE INTELIGÊNCIA
+             ══════════════════════════════════════════════════════════════════════ -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🧠</span> Arquitetura de Inteligência</h2>
+                    <p>O "Cérebro" do Sistema - RAG (Retrieval-Augmented Generation)</p>
+                </div>
+
+                <div class="process-steps">
+                    <div class="process-step card reveal">
+                        <div class="step-number">📚</div>
+                        <div class="step-content">
+                            <h4>Base de Conhecimento Vetorial</h4>
+                            <p>
+                                A plataforma possui uma base vetorial que armazena PDFs oficiais
+                                (Leis, Notas Técnicas, PLPs). Quando o usuário faz uma pergunta,
+                                o sistema não usa apenas o conhecimento genérico da IA - ele
+                                <strong>consulta os documentos oficiais</strong> e gera respostas
+                                fundamentadas ("Evidence-Based"), citando artigos e parágrafos.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step card reveal">
+                        <div class="step-number">🔗</div>
+                        <div class="step-content">
+                            <h4>Inteligência Transversal</h4>
+                            <p>
+                                O "cérebro" não fica isolado. Ele foi conectado via Hook
+                                (<code>useLegislativeBrain</code>) a vários módulos, permitindo que
+                                o Simulador, o Validador de XML e o Diagnóstico consultem
+                                a legislação automaticamente durante suas operações.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step card reveal">
+                        <div class="step-number">👁️</div>
+                        <div class="step-content">
+                            <h4>Multimodalidade (OCR)</h4>
+                            <p>
+                                Capacidade de ler imagens e PDFs (ex: Notas Fiscais) para extrair
+                                dados automaticamente. O usuário arrasta uma NF e o sistema
+                                preenche formulários de simulação sem digitação manual.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SEÇÃO 3: OS 18 MÓDULOS
+             ══════════════════════════════════════════════════════════════════════ -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>📋</span> Os 18 Módulos Integrados</h2>
+                    <p>Agrupados por finalidade estratégica</p>
+                </div>
+
+                <!-- Categoria A: Estratégia -->
+                <div style="margin-bottom: var(--space-xl);">
+                    <h3 class="reveal" style="color: var(--color-accent); margin-bottom: var(--space-md);">
+                        🎯 Estratégia e Diagnóstico
+                    </h3>
+                    <div class="tech-challenges">
+                        <div class="challenge-item reveal">
+                            <div class="challenge-col">
+                                <h4>Diagnóstico de Impacto</h4>
+                                <p>Relatório estratégico com carga tributária, fluxo de caixa e cadeia de suprimentos
+                                </p>
+                            </div>
+                            <div class="challenge-col">
+                                <h4>Cadastro Fiscal</h4>
+                                <p>Gestão de múltiplas empresas com preenchimento automático via CNPJ</p>
+                            </div>
+                            <div class="challenge-col">
+                                <h4>Dashboard Consolidado</h4>
+                                <p>Visão agregada para grupos econômicos com gráficos comparativos</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria B: Jurídico -->
+                <div style="margin-bottom: var(--space-xl);">
+                    <h3 class="reveal" style="color: var(--color-accent); margin-bottom: var(--space-md);">
+                        📖 Jurídico e Conhecimento
+                    </h3>
+                    <div class="tech-challenges">
+                        <div class="challenge-item reveal">
+                            <div class="challenge-col">
+                                <h4>Biblioteca Legislativa</h4>
+                                <p>Chat RAG, Radar Legislativo e Comparador Inteligente "De/Para"</p>
+                            </div>
+                            <div class="challenge-col">
+                                <h4>CBS/IBS</h4>
+                                <p>Material educativo e calculadoras de apuração Débito/Crédito</p>
+                            </div>
+                            <div class="challenge-col">
+                                <h4>Alertas Legislativos</h4>
+                                <p>Monitoramento de mudanças com análise automática de impacto</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria C: Operacional -->
+                <div style="margin-bottom: var(--space-xl);">
+                    <h3 class="reveal" style="color: var(--color-accent); margin-bottom: var(--space-md);">
+                        ⚙️ Operacional e Técnico
+                    </h3>
+                    <div class="tech-challenges">
+                        <div class="challenge-item reveal">
+                            <div class="challenge-col">
+                                <h4>Documentos DF-e</h4>
+                                <p>Validador de XML cruzando com Notas Técnicas da base RAG</p>
+                            </div>
+                            <div class="challenge-col">
+                                <h4>Obrigações Acessórias</h4>
+                                <p>Pré-validação de SPED (EFD ICMS/IPI, Contribuições)</p>
+                            </div>
+                            <div class="challenge-col">
+                                <h4>Gestão de Compliance</h4>
+                                <p>Calendário fiscal e gerenciador de tarefas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria D: Simuladores -->
+                <div style="margin-bottom: var(--space-xl);">
+                    <h3 class="reveal" style="color: var(--color-accent); margin-bottom: var(--space-md);">
+                        💰 Simuladores Financeiros
+                    </h3>
+                    <div class="tech-challenges">
+                        <div class="challenge-item reveal">
+                            <div class="challenge-col">
+                                <h4>Simulador Tributário</h4>
+                                <p>Compara Simples vs Presumido vs Real com OCR de NF</p>
+                            </div>
+                            <div class="challenge-col">
+                                <h4>Split Payment</h4>
+                                <p>Impacto no fluxo de caixa (Pix, Cartão, Boleto)</p>
+                            </div>
+                            <div class="challenge-col">
+                                <h4>Créditos Acumulados</h4>
+                                <p>VPL de créditos ICMS em 20 anos com perda inflacionária</p>
+                            </div>
+                        </div>
+                        <div class="challenge-item reveal">
+                            <div class="challenge-col">
+                                <h4>Imposto Seletivo</h4>
+                                <p>Análise NCM para "Imposto do Pecado" e preço final</p>
+                            </div>
+                            <div class="challenge-col">
+                                <h4>Cashback do Povo</h4>
+                                <p>Elegibilidade e "Preço Efetivo" para consumidor</p>
+                            </div>
+                            <div class="challenge-col">
+                                <h4>Regimes Específicos</h4>
+                                <p>Imobiliário, Combustíveis e Financeiro</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Categoria E: Nichos -->
+                <div>
+                    <h3 class="reveal" style="color: var(--color-accent); margin-bottom: var(--space-md);">
+                        🎯 Regimes Especiais
+                    </h3>
+                    <div class="tech-challenges">
+                        <div class="challenge-item reveal">
+                            <div class="challenge-col">
+                                <h4>Nanoempreendedor & MEI</h4>
+                                <p>Monitor de teto R$ 40.5k e simulador de crescimento</p>
+                            </div>
+                            <div class="challenge-col">
+                                <h4>Planejamento Transição</h4>
+                                <p>Timeline interativa 2026-2033 com checklists</p>
+                            </div>
+                            <div class="challenge-col">
+                                <h4>Normas e Sistemas</h4>
+                                <p>Tradutor de operações e analisador de leiautes</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SEÇÃO 4: STACK TECNOLÓGICA
+             ══════════════════════════════════════════════════════════════════════ -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🛠️</span> Stack Tecnológica</h2>
+                    <p>Tecnologias de ponta para uma plataforma enterprise</p>
+                </div>
+
+                <div class="tech-challenges">
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Frontend</h4>
+                            <p>React (Vite) + Tailwind CSS com responsividade e Dark Mode</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Backend & Database</h4>
+                            <p>Supabase (PostgreSQL + pgvector para vetorização)</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Inteligência Artificial</h4>
+                            <p>Google Gemini Flash 2.5 + Embedding-004</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tech-stack-section reveal">
+                    <h3>Stack Completa</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">Vite</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">PostgreSQL</span>
+                        <span class="tech-tag">pgvector</span>
+                        <span class="tech-tag">Gemini 2.5 Flash</span>
+                        <span class="tech-tag">Embedding-004</span>
+                        <span class="tech-tag">PDF.js</span>
+                        <span class="tech-tag">jsPDF</span>
+                        <span class="tech-tag">OCR</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SEÇÃO 5: VIBE CODING APLICADO
+             ══════════════════════════════════════════════════════════════════════ -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>✨</span> Vibe Coding + IA Aplicados</h2>
+                    <p>Como a intuição guiou a construção desta plataforma complexa</p>
+                </div>
+
+                <div class="process-steps">
+                    <div class="process-step card reveal">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>Arquitetura RAG Intuitiva</h4>
+                            <p>
+                                A decisão de usar RAG não veio de um manual, mas da necessidade
+                                de respostas confiáveis. Experimentei várias abordagens até
+                                encontrar o equilíbrio entre velocidade (Flash 2.5) e precisão
+                                (base vetorial pgvector).
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step card reveal">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>Hook useLegislativeBrain</h4>
+                            <p>
+                                A criação de um hook centralizado que conecta a IA a todos os
+                                módulos foi uma decisão de fluxo. Em vez de implementar IA em
+                                cada módulo separadamente, criei uma abstração que permite
+                                consultas transversais.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="process-step card reveal">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>OCR como Diferencial</h4>
+                            <p>
+                                A multimodalidade não estava no escopo inicial. Surgiu da
+                                observação de que usuários perdiam tempo digitando dados de NFs.
+                                A solução veio naturalmente: "e se a IA pudesse ler a nota?".
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SEÇÃO 6: MÉTRICAS E DIFERENCIAIS
+             ══════════════════════════════════════════════════════════════════════ -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>📊</span> Diferenciais Enterprise</h2>
+                    <p>O que torna esta plataforma única</p>
+                </div>
+
+                <div class="metrics-grid">
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📚</div>
+                        <div class="metric-value">18</div>
+                        <div class="metric-label">Módulos Integrados</div>
+                        <div class="metric-context">Cobertura completa da Reforma Tributária</div>
+                    </div>
+
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🧠</div>
+                        <div class="metric-value">RAG</div>
+                        <div class="metric-label">Evidence-Based</div>
+                        <div class="metric-context">Respostas com citação de artigos e leis</div>
+                    </div>
+
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">👁️</div>
+                        <div class="metric-value">OCR</div>
+                        <div class="metric-label">Multimodal</div>
+                        <div class="metric-context">Leitura automática de NFs e PDFs</div>
+                    </div>
+
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📅</div>
+                        <div class="metric-value">8</div>
+                        <div class="metric-label">Anos de Transição</div>
+                        <div class="metric-context">Timeline 2026-2033 completa</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════════
+             SEÇÃO 7: LINKS E CTA
+             ══════════════════════════════════════════════════════════════════════ -->
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🔗</span> Links e Próximos Passos</h2>
+                    <p>Explore mais sobre este projeto</p>
+                </div>
+
+                <div class="links-grid">
+                    <a href="#" class="card link-card reveal">
+                        <div class="link-icon">🚀</div>
+                        <div class="link-info">
+                            <h4>Demo ao Vivo</h4>
+                            <p>Acesse a plataforma Prisma Fiscal</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="card link-card reveal">
+                        <div class="link-icon">📂</div>
+                        <div class="link-info">
+                            <h4>Documentação</h4>
+                            <p>Guia completo de módulos e funcionalidades</p>
+                        </div>
+                    </a>
+
+                    <a href="#" class="card link-card reveal">
+                        <div class="link-icon">📧</div>
+                        <div class="link-info">
+                            <h4>Solicitar Acesso</h4>
+                            <p>Entre em contato para demonstração</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="project-cta reveal">
+                    <p>
+                        Interessado em como esta plataforma pode ajudar sua empresa
+                        na transição da Reforma Tributária? Vamos conversar.
+                    </p>
+                    <a href="../index.html#contact" class="btn btn-primary">
+                        Entre em Contato
+                        <span>→</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navigation to Other Projects -->
+        <section class="content-section" style="padding-top: 0;">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2>Outros <span class="text-gradient">Projetos</span></h2>
+                </div>
+
+                <div class="projects-grid" style="max-width: 800px; margin: 0 auto;">
+                    <a href="gerador-prompts.html" class="card project-card reveal">
+                        <div class="project-thumbnail">🧠</div>
+                        <div class="project-tags">
+                            <span class="tag">IA</span>
+                            <span class="tag">React</span>
+                        </div>
+                        <h4>Gerador de Prompts Inteligentes</h4>
+                        <p>Intermediário inteligente entre usuários e LLMs</p>
+                        <span class="project-link">Ver detalhes →</span>
+                    </a>
+
+                    <a href="conferencia-nfs.html" class="card project-card reveal">
+                        <div class="project-thumbnail">📋</div>
+                        <div class="project-tags">
+                            <span class="tag">Automação</span>
+                            <span class="tag">Fiscal</span>
+                        </div>
+                        <h4>Conferência de NFs 2.0</h4>
+                        <p>Automação inteligente de conferência fiscal</p>
+                        <span class="project-link">Ver detalhes →</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>
+                © 2025 VibeDev • Construído com
+                <span class="text-gradient">Vibe Coding + IA</span>
+            </p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="../js/main.js"></script>
+</body>
+
+</html>

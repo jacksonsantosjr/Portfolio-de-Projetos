@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Smart Automation - Plataforma de automação RPA com designer visual, IA generativa e agente desktop para controle real de sistemas.">
+    <title>Smart Automation | Portfólio Vibe Coding + IA</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="../index.html" class="logo"><span class="logo-icon">⚡</span><span>Vibe<span
+                        class="text-gradient">Dev</span></span></a>
+            <div class="nav-links" id="navLinks">
+                <a href="../index.html">Home</a>
+                <a href="../index.html#projects">Projetos</a>
+                <a href="../index.html#method">Método</a>
+                <a href="../index.html#contact">Contato</a>
+            </div>
+            <div class="nav-toggle" id="navToggle" aria-label="Abrir menu"><span></span><span></span><span></span></div>
+        </div>
+    </nav>
+
+    <main id="main-content">
+        <section class="project-hero">
+            <div class="container">
+                <div class="project-hero-content reveal">
+                    <nav class="breadcrumb">
+                        <a href="../index.html">Home</a><span>›</span>
+                        <a href="../index.html#projects">Projetos</a><span>›</span>
+                        <span>Smart Automation</span>
+                    </nav>
+                    <div class="featured-badge" style="background: linear-gradient(135deg, #f59e0b 0%, #ef4444 100%);">
+                        🤖 RPA + IA</div>
+                    <h1>Smart <span class="text-gradient">Automation</span></h1>
+                    <p>Plataforma de automação com designer visual drag-and-drop, geração de fluxos via IA e agente
+                        desktop que controla mouse, teclado e navegadores reais. O futuro do RPA.</p>
+                    <div class="project-meta">
+                        <div class="meta-item"><span>📅</span><span>2025</span></div>
+                        <div class="meta-item"><span>🎯</span><span>RPA Enterprise</span></div>
+                        <div class="meta-item"><span>🏷️</span><span>React, Python, Gemini, Supabase</span></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="summary-section">
+            <div class="container">
+                <div class="summary-grid">
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">🎯</div>
+                        <h3>O Problema</h3>
+                        <p>Automações de navegador são limitadas - não controlam desktop real, Citrix, Excel nativo ou
+                            terminais. Criar fluxos RPA requer conhecimento técnico avançado.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">💡</div>
+                        <h3>A Solução</h3>
+                        <p>Designer visual + IA que gera fluxos a partir de texto/imagem + Agente Desktop (Python) que
+                            executa ações reais via WebSocket. Controle completo do sistema.</p>
+                    </div>
+                    <div class="card summary-card reveal">
+                        <div class="summary-icon">📈</div>
+                        <h3>O Impacto</h3>
+                        <p>Biblioteca de 15+ tipos de ação. Execução com feedback visual em tempo real. Persistência em
+                            Supabase. Dashboard de performance.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🏗️</span> Arquitetura Híbrida</h2>
+                </div>
+                <div class="tech-challenges">
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Frontend (Web)</h4>
+                            <p>React 19 + React Flow para canvas. Designer visual com paleta de ações e painel de
+                                propriedades.</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Backend (Supabase)</h4>
+                            <p>PostgreSQL para salvar fluxos. Histórico de execuções. Auth integrado.</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Agente (Python)</h4>
+                            <p>Serviço local via WebSocket (8755). Controla mouse, teclado, Chrome/Edge real, Citrix,
+                                Excel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🧠</span> IA Generativa</h2>
+                </div>
+                <div class="process-steps">
+                    <div class="process-step card reveal">
+                        <div class="step-number">💬</div>
+                        <div class="step-content">
+                            <h4>Texto/Imagem → Fluxo</h4>
+                            <p>Descreva "Entre no site X e baixe o relatório" ou envie print de tela. Gemini analisa e
+                                retorna ActionPlan JSON que vira nós no canvas automaticamente.</p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">🤖</div>
+                        <div class="step-content">
+                            <h4>Co-Piloto Chat</h4>
+                            <p>Assistente que conhece o fluxo atual. Peça "Adicione espera de 5s antes do clique" e ele
+                                modifica (ADD_NODE, UPDATE_NODE, DELETE_NODE) programaticamente.</p>
+                        </div>
+                    </div>
+                    <div class="process-step card reveal">
+                        <div class="step-number">📋</div>
+                        <div class="step-content">
+                            <h4>Structured Output</h4>
+                            <p>Schema JSON rígido (actionPlanSchema) previne alucinações. Prompt instrui IA a escapar
+                                caracteres especiais em seletores XPath.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>🎮</span> Biblioteca de Ações</h2>
+                </div>
+                <div class="tech-challenges">
+                    <div class="challenge-item reveal">
+                        <div class="challenge-col">
+                            <h4>Navegador</h4>
+                            <p>Abrir, clicar, digitar, extrair texto, esperar elemento, scroll</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Lógica de Dados</h4>
+                            <p>Gerar linhas, filtrar, input JSON, loop, condicionais</p>
+                        </div>
+                        <div class="challenge-col">
+                            <h4>Desktop/Sistema</h4>
+                            <p>Terminal, scripts Python, mover arquivos, OCR, Excel, Word, Citrix</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="tech-stack-section reveal">
+                    <h3>Stack Tecnológica</h3>
+                    <div class="tech-tags">
+                        <span class="tech-tag">React 19</span>
+                        <span class="tech-tag">TypeScript</span>
+                        <span class="tech-tag">React Flow</span>
+                        <span class="tech-tag">Tailwind CSS</span>
+                        <span class="tech-tag">Supabase</span>
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">WebSocket</span>
+                        <span class="tech-tag">Gemini 2.5</span>
+                        <span class="tech-tag">Recharts</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-header reveal">
+                    <h2><span>📊</span> Monitoramento</h2>
+                </div>
+                <div class="metrics-grid">
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📊</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Dashboard</div>
+                        <div class="metric-label">Estatísticas</div>
+                        <div class="metric-context">Taxas de sucesso/falha</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">🔴</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Tempo Real</div>
+                        <div class="metric-label">Feedback Visual</div>
+                        <div class="metric-context">Nós pulsam durante execução</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">📝</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Logs</div>
+                        <div class="metric-label">Debug Console</div>
+                        <div class="metric-context">Comunicação WebSocket raw</div>
+                    </div>
+                    <div class="card metric-card reveal">
+                        <div class="metric-icon">☁️</div>
+                        <div class="metric-value" style="font-size: 1.3rem;">Persistência</div>
+                        <div class="metric-label">Supabase</div>
+                        <div class="metric-context">Salvar/Carregar fluxos</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="project-cta reveal">
+                    <p>Interessado em automação RPA com IA?</p>
+                    <a href="../index.html#contact" class="btn btn-primary">Entre em Contato <span>→</span></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 VibeDev • Construído com <span class="text-gradient">Vibe Coding + IA</span></p>
+        </div>
+    </footer>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
