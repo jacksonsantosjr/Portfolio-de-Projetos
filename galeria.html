@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Galeria Completa de Projetos - Soluções em Vibe Coding + IA">
+    <title>Galeria de Projetos | VibeDev</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css?v=1.4">
+    <style>
+        .galeria-header {
+            padding: 120px 0 60px;
+            text-align: center;
+            background: radial-gradient(circle at top center, rgba(99, 102, 241, 0.15) 0%, transparent 70%);
+        }
+
+        .projects-full-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            gap: 2rem;
+            padding: 40px 0 100px;
+        }
+
+        .back-home {
+            margin-bottom: 2rem;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            text-decoration: none;
+            transition: var(--transition-base);
+        }
+
+        .back-home:hover {
+            color: var(--primary-light);
+            transform: translateX(-5px);
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar active">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">⚡</span>
+                <span>Vibe<span class="text-gradient">Dev</span></span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html#featured">Destaques</a>
+                <a href="index.html#contact">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container">
+        <header class="galeria-header reveal">
+            <a href="index.html" class="back-home">← Voltar para Home</a>
+            <div class="section-header">
+                <h2>Portfólio: <span class="text-gradient">Projetos</span> que Geram Impacto</h2>
+                <p>Cada projeto representa uma solução real para um desafio de negócio</p>
+            </div>
+        </header>
+
+        <div class="projects-full-grid">
+            <!-- Projeto 4: Conferência de NFs -->
+            <a href="projetos/conferencia-nfs.html" class="card project-card reveal">
+                <div class="project-thumbnail">📋</div>
+                <div class="project-tags">
+                    <span class="tag">Automação</span>
+                    <span class="tag">Fiscal</span>
+                    <span class="tag">Python</span>
+                </div>
+                <h4>Conferência de NFs 2.0</h4>
+                <p>Automação inteligente de conferência fiscal com redução de 80% no tempo.</p>
+                <span class="project-link">Ver detalhes <span>→</span></span>
+            </a>
+
+            <!-- Projeto 5: Conversor SPED -->
+            <a href="projetos/conversor-sped.html" class="card project-card reveal">
+                <div class="project-thumbnail">🔄</div>
+                <div class="project-tags">
+                    <span class="tag">ETL</span>
+                    <span class="tag">Dados</span>
+                    <span class="tag">Compliance</span>
+                </div>
+                <h4>Conversor SPED Universal</h4>
+                <p>Transformação de arquivos fiscais SPED em dados estruturados e analisáveis.</p>
+                <span class="project-link">Ver detalhes <span>→</span></span>
+            </a>
+
+            <!-- Projeto 6: Extrator PDFs -->
+            <a href="projetos/extrator-pdfs.html" class="card project-card reveal">
+                <div class="project-thumbnail">📄</div>
+                <div class="project-tags">
+                    <span class="tag">IA</span>
+                    <span class="tag">Multimodal</span>
+                    <span class="tag">Gemini</span>
+                </div>
+                <h4>NF Extrator AI 3.0</h4>
+                <p>Extração de NF-e/NFS-e com IA multimodal (visão + texto).</p>
+                <span class="project-link">Ver detalhes <span>→</span></span>
+            </a>
+
+            <!-- Projeto 7: PDF Fusion -->
+            <a href="projetos/pdf-fusion.html" class="card project-card reveal">
+                <div class="project-thumbnail">📑</div>
+                <div class="project-tags">
+                    <span class="tag">PDF</span>
+                    <span class="tag">Client</span>
+                    <span class="tag">Privado</span>
+                </div>
+                <h4>PDF Fusion</h4>
+                <p>Combine PDFs no navegador, 100% offline e privado.</p>
+                <span class="project-link">Ver detalhes <span>→</span></span>
+            </a>
+
+            <!-- Projeto 8: Renomear Guias -->
+            <a href="projetos/renomear-guias.html" class="card project-card reveal">
+                <div class="project-thumbnail">🏷️</div>
+                <div class="project-tags">
+                    <span class="tag">IA</span>
+                    <span class="tag">Fiscal</span>
+                    <span class="tag">Gemini</span>
+                </div>
+                <h4>Renomear Guias</h4>
+                <p>IA identifica DARFs e renomeia com padrão organizacional.</p>
+                <span class="project-link">Ver detalhes <span>→</span></span>
+            </a>
+
+            <!-- Projeto 9: Smart Automation -->
+            <a href="projetos/smart-automation.html" class="card project-card reveal">
+                <div class="project-thumbnail">🤖</div>
+                <div class="project-tags">
+                    <span class="tag">RPA</span>
+                    <span class="tag">Python</span>
+                    <span class="tag">IA</span>
+                </div>
+                <h4>Smart Automation</h4>
+                <p>RPA com designer visual, IA e agente desktop.</p>
+                <span class="project-link">Ver detalhes <span>→</span></span>
+            </a>
+
+            <!-- Projeto 10: Portal de Licenças -->
+            <a href="projetos/portal-licencas.html" class="card project-card reveal">
+                <div class="project-thumbnail">🔑</div>
+                <div class="project-tags">
+                    <span class="tag">SaaS</span>
+                    <span class="tag">Supabase</span>
+                    <span class="tag">SDK</span>
+                </div>
+                <h4>Portal de Licenças</h4>
+                <p>Sistema de monetização de software com validação remota.</p>
+                <span class="project-link">Ver detalhes <span>→</span></span>
+            </a>
+
+            <!-- Outros projetos da pasta 'projetos' (Exemplos adicionais) -->
+            <a href="projetos/classificador-ncm.html" class="card project-card reveal">
+                <div class="project-thumbnail">🗂️</div>
+                <div class="project-tags"><span class="tag">IA</span><span class="tag">NCM</span></div>
+                <h4>Classificador NCM AI</h4>
+                <p>Sugestão inteligente de NCM baseada na descrição do item.</p>
+                <span class="project-link">Ver detalhes <span>→</span></span>
+            </a>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 VibeDev • Construído com <span class="text-gradient">Vibe Coding + IA</span></p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script>
+        // Forçar ativação imediata dos reveals na página de galeria
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                document.querySelectorAll('.reveal').forEach(el => el.classList.add('active'));
+            }, 100);
+        });
+    </script>
+</body>
+
+</html>
