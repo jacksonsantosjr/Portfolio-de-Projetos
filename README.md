@@ -34,15 +34,17 @@ Se você tem Python instalado (geralmente já vem no Linux/Mac e é fácil de in
 
 *   `/css`: Arquivos de estilo (`styles.css`).
 *   `/js`: Scripts principais (`main.js`).
-*   `/projetos`: Páginas detalhadas de cada projeto (ex: `prisma-fiscal.html`, `gerador-prompts.html`).
-*   `/assets`: Imagens e ícones (se houver).
+*   `/projetos`: Páginas detalhadas de cada projeto (ex: `prisma-fiscal.html`).
+*   `/assets`: Imagens e recursos visuais.
 *   `index.html`: Página principal (Home).
+*   `galeria.html`: Página dedicada da galeria de projetos.
+*   `project_roi_template.md`: Template para preenchimento de métricas de impacto.
 
-## ✨ Destaques
+## ✨ Destaques e Próximos Passos
 
-*   **Seção "Sobre":** Apresentação profissional com bio e links sociais.
-*   **Galeria de Projetos:** Cards interativos com detalhes de tecnologias e impacto.
-*   **Design Responsivo:** Adaptável a Mobile, Tablet e Desktop.
+*   **Galeria Dedicada:** Navegação fluida para visualização completa do portfólio.
+*   **Foco em ROI:** Template pronto para transformar descrições técnicas em casos de sucesso.
+*   **Auditoria de Elite:** Estrutura pronta para atingir o nível "A+" conforme o `Professional Audit`.
 
 ---
 Desenvolvido por Jackson Alves dos Santos Junior.
